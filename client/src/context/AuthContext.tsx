@@ -68,8 +68,8 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         password,
       });
       // Note: Using Navigate like this doesn't work - we'll address this later
-       <Navigate to={"/contest"} />
-    //  window.location.reload();
+       <Navigate to={"/dashboard"} />
+     window.location.reload();
     } catch (err) {
       toast.error("Error Logging in, Please try again");
       console.error("Login failed:", err);
