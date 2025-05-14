@@ -60,6 +60,7 @@ const LoginPage: React.FC = () => {
         // Handle additional steps like 2FA
         console.log(result);
       }
+      window.location.reload()
     } catch (err: any) {
       console.error('Login error:', err);
       toast.error(err.errors?.[0]?.message || 'Failed to log in');
