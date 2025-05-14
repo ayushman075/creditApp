@@ -23,7 +23,7 @@ dotenv.config({
 
 // Middleware
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost", "http://localhost:8000", "https://qulth.vercel.app"],
+    origin: ["http://localhost:5173", "https://credit-app-jl8y.vercel.app" , "http://localhost", "http://localhost:8000", "https://qulth.vercel.app"],
     methods: ["GET", "POST", "OPTIONS", "PUT", "PATCH" , "DELETE"],
     credentials: true
 }));
@@ -46,7 +46,7 @@ app.use(cookieParser());
 
 // Root route
 app.get('/', (_req: Request, res: Response) => {
-    res.send('Welcome to Qulth, on this line you are talking to Qulth server !!');
+    res.send('Welcome to creditApp, on this line you are talking to Qulth server !!');
 });
 
 // Server start

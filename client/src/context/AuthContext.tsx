@@ -107,8 +107,8 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     try {
       await signIn?.authenticateWithRedirect({
         strategy: "oauth_google",
-        redirectUrl: "http://localhost:5173/oauth-callback",
-        redirectUrlComplete:"http://localhost:5173/dashboard"
+        redirectUrl: "https://credit-app-jl8y.vercel.app/oauth-callback",
+        redirectUrlComplete:"https://credit-app-jl8y.vercel.app/dashboard"
       });
     } catch (err) {
       toast.error("Error with Google login, please try again.");
